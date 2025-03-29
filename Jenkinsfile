@@ -14,5 +14,10 @@ pipeline{
               bat 'npm test'
             }
         }
+        stage('Deploy'){
+            steps{
+              bat 'deploy a Node.js application'
+            }
+        }
     }
 }
