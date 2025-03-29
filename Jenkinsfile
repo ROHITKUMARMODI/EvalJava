@@ -4,11 +4,6 @@ pipeline{
         nodejs 'Nodejs'
     }
     stages{
-          stage('Checkout'){
-            steps{
-               @url 'https://github.com/ROHITKUMARMODI/EvalJava.git',branch 'main'
-            }
-        }
         stage('Build'){
             steps{
               bat 'npm run build'
