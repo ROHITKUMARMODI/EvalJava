@@ -6,7 +6,7 @@ pipeline{
     stages{
           stage('Checkout'){
             steps{
-               url 'https://github.com/ROHITKUMARMODI/EvalJava.git',branch 'main'
+               @url 'https://github.com/ROHITKUMARMODI/EvalJava.git',branch 'main'
             }
         }
         stage('Build'){
